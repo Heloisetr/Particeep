@@ -1,11 +1,11 @@
 import { Route, Switch } from 'react-router-dom';
 import React from 'react';
 
-//import DashboardFlights from 'containers/dahsboardContainer/DashboardFlightsContainer';
+import Dashboard from 'containers/DashboardContainer';
 
 const Routes = () => (
   <Switch>
-   
+    <Route exact path='/' component={Dashboard} />    
   </Switch>
 );
 
