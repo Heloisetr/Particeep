@@ -1,5 +1,5 @@
-//import { StateType as DashboardFlightsType } from 'reducers/dashboardReducer';
+import { StateType as MoviesType } from 'reducers/dashboardReducer';
 
 export interface StateType {
-  //dashboardState: DashboardFlightsType;
+  dashboardState: MoviesType;
 }
