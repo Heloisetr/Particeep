@@ -5,10 +5,12 @@ import Status from 'types/StatusType';
 
 import 'styles/dashboard.css';
 import DashboardHeader from 'components/fragments/DashboardHeader';
-import { MoviesAllDataContentType } from 'types/MoviesType';
+import { MoviesAllDataContentType, MoviesContentType } from 'types/MoviesType';
+import MovieCard from 'components/fragments/MovieCard';
 
 export interface DispatchProps {
   getMovies: Function;
+  deleteMovie: Function;
 }
 
 export interface StateProps {
@@ -25,6 +27,27 @@ class Dashboard extends Component<Props> {
     getMovies();
   }
 
+  onDelete = (movieId: string) => {
+    const { deleteMovie } = this.props;
+
+
+    deleteMovie(movieId);
+  }
+
+  displayMovies = () => {
+    const { moviesData } = this.props;
+
+    return (
+      moviesData.movies.map((movie: MoviesContentType, index) => {
+        return (
+          <div key={index} className="dashboardCardContainer">
+            <MovieCard movieData={movie} OnDelete={this.onDelete}/>
+          </div>
+        );
+      })
+    );
+  }
+
   render() {
     const { moviesData } = this.props;
 
@@ -32,6 +55,11 @@ class Dashboard extends Component<Props> {
     return (
       <div>
         <DashboardHeader />
+        <div className="dashboardContainer">
+          <div className="dashboardCard">
+            {this.displayMovies()}
+          </div>
+        </div>
       </div>
     );
   }
