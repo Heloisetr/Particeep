@@ -1,0 +1,58 @@
+.movieCardContainer {
+  width: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 10px  rgba(0, 0, 0, 0.2);
+  border-radius: 15px; 
+}
+.movieCardTitle {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.movieCardCategory {
+  text-align: center;
+  margin-top: 23px;
+}
+.movieCardRatio {
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 50%;
+  height: 6px;
+  background-color: red;
+}
+.movieCardProgressRatio {
+  background-color: darkblue;
+  height: 6px;
+}
+.movieCardInfoRatio {
+  margin-left: 30px;
+  width: 50%;
+  font-size: small;
+  text-align: center;
+}
+.movieCardThumb {
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 20px;
+}
+.up {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.down {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.up-active {
+  color: aqua;
+}
+.down-active {
+  color: plum;
+}
+.trash {
+  font-size: 20px;
+  color: red;
+}
