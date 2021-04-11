@@ -1,4 +1,4 @@
-.dashboardContainer {
+.DashboardContainer {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -42,4 +42,74 @@
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);      
+}
+.dashboardElementChoice {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.dashboardButton {
+  border-radius: 100%;
+  border-color: #708090;
+  width: 7%;
+  margin-right: 10px;
+  background-color: white;
+  font-size: small;
+}
+.dashboardButton:focus {
+  background-color: #708090;
+  border-color: #708090;
+}
+.dashboardFilterActivation {
+  border-radius: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 10px  rgba(0, 0, 0, 0.2);
+  width: 15%;
+  margin-left: auto;
+  display: flex;
+  margin-right: auto;
+  height: 45px;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.dashboardFilterImg {
+  width: 16%;
+  margin-left: auto;
+  display: inline-flex;
+}
+.dashboardFilterName {
+  text-align: right;
+  display: inline-flex;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.dashboardFilterContainer {
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+.dashboardFilterInput {
+  width: 70%;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  text-align: center;
+}
+.dashboardFilterCheckbox {
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: auto;
+}
+.input {
+  margin-right: 3px;
 }
