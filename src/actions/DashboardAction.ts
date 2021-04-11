@@ -45,15 +45,15 @@ export const deleteMovieSuccess = (data: MoviesDeletedResponseContentType): DELE
   payload: data,
 });
 
+export const DELETE_MOVIE_FAILURE = 'DELETE_MOVIE_FAILURE';
+export const deleteMovieFailure = (): DELETE_MOVIE_FAILURE_ACTION => ({
+  type: DELETE_MOVIE_FAILURE,
+});
+
 export const CHANGE_ITEMS_PAGE = 'CHANGE_ITEMS_PAGE';
 export const changeItemsPage = (itemsPage: number): CHANGE_ITEMS_PAGE_ACTION => ({
   type: CHANGE_ITEMS_PAGE,
   payload: itemsPage,
-});
-
-export const DELETE_MOVIE_FAILURE = 'DELETE_MOVIE_FAILURE';
-export const deleteMovieFailure = (): DELETE_MOVIE_FAILURE_ACTION => ({
-  type: DELETE_MOVIE_FAILURE,
 });
 
 export const CHANGE_ITEMS_PAGE_SUCCESS = 'CHANGE_ITEMS_PAGE_SUCCESS';
