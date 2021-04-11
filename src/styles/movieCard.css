@@ -15,16 +15,17 @@
 .movieCardCategory {
   text-align: center;
   margin-top: 23px;
+  color: #708090;
 }
 .movieCardRatio {
   margin-left: 30px;
   margin-top: 40px;
   width: 50%;
   height: 6px;
-  background-color: red;
+  background-color: #708090;
 }
 .movieCardProgressRatio {
-  background-color: darkblue;
+  background-color: #1E90FF;
   height: 6px;
 }
 .movieCardInfoRatio {
@@ -47,12 +48,12 @@
   margin-right: 10px;
 }
 .up-active {
-  color: aqua;
+  color: #1E90FF;
 }
 .down-active {
-  color: plum;
+  color: #708090;
 }
 .trash {
   font-size: 20px;
-  color: red;
+  color: #B22222;
 }

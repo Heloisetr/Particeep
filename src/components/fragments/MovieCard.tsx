@@ -47,7 +47,6 @@ class MovieCard extends PureComponent<Props, State> {
   onDelete = (e: React.MouseEvent) => {
     const { OnDelete, movieData } = this.props;
 
-
     e.preventDefault();
 
     OnDelete(movieData.id);

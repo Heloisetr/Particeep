@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 
-import Logo from 'assets/logo.jpeg';
+import Logo from 'assets/logo.svg';
 
 import 'styles/dashboardHeader.css';
 
